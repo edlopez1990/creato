@@ -17,7 +17,8 @@
         }
         section.home-header {
             background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 100%, rgba(23, 235, 177, 0.7) 50%), url(../img/bg_header.png);
-            height: auto;
+            height: 100vh;
+            min-height: 600px;
             .block-text {
                 .mb-center {
                     text-align: center;
@@ -38,6 +39,9 @@
                 }
                 .text-title {
                     font-size: 35px;
+                }
+                .title-dark {
+                    color: #fff !important;
                 }
                 .description {
                     font-size: 16px;
