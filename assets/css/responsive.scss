@@ -1,8 +1,23 @@
 @media only screen and (max-width: 992px) {
     @import "./menu.scss";
     body {
+        section.home-header,
+        section.who-we-are,
+        section.what-we-do,
+        section.our-work,
+        section.contact {
+            h1 {
+                font-size: 40px !important;
+            }
+            .blocks {
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
         section.home-header {
             background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 100%, rgba(23, 235, 177, 0.7) 50%), url(../img/bg_header.png);
+            height: auto;
             .block-text {
                 .mb-center {
                     text-align: center;
@@ -19,6 +34,13 @@
                 .btn-learn {
                     margin-left: auto;
                     margin-right: auto;
+                    font-size: 12px;
+                }
+                .text-title {
+                    font-size: 35px;
+                }
+                .description {
+                    font-size: 16px;
                 }
             }
         }
@@ -30,6 +52,7 @@
                 p {
                     text-align: center;
                     margin: auto;
+                    font-size: 12px;
                 }
             }
         }
@@ -41,6 +64,15 @@
                 }
                 .carousel-control-next {
                     right: 0px;
+                }
+            }
+        }
+        section.contact {
+            ul {
+                li {
+                    span {
+                        font-size: 12px;
+                    }
                 }
             }
         }

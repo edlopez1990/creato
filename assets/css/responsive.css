@@ -95,9 +95,24 @@
     -webkit-transform: rotate(-135deg);
     transform: rotate(-135deg);
   }
+  body section.home-header h1,
+  body section.who-we-are h1,
+  body section.what-we-do h1,
+  body section.our-work h1,
+  body section.contact h1 {
+    font-size: 40px !important;
+  }
+  body section.home-header .blocks p,
+  body section.who-we-are .blocks p,
+  body section.what-we-do .blocks p,
+  body section.our-work .blocks p,
+  body section.contact .blocks p {
+    font-size: 16px;
+  }
   body section.home-header {
     background: -webkit-gradient(linear, left top, right top, color-stop(100%, rgba(0, 0, 0, 0.7)), color-stop(50%, rgba(23, 235, 177, 0.7))), url(../img/bg_header.png);
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 100%, rgba(23, 235, 177, 0.7) 50%), url(../img/bg_header.png);
+    height: auto;
   }
   body section.home-header .block-text .mb-center {
     text-align: center;
@@ -114,6 +129,13 @@
   body section.home-header .block-text .btn-learn {
     margin-left: auto;
     margin-right: auto;
+    font-size: 12px;
+  }
+  body section.home-header .block-text .text-title {
+    font-size: 35px;
+  }
+  body section.home-header .block-text .description {
+    font-size: 16px;
   }
   body section.who-we-are .block-text h1 {
     text-align: center;
@@ -121,6 +143,7 @@
   body section.who-we-are .block-text p {
     text-align: center;
     margin: auto;
+    font-size: 12px;
   }
   body section.our-work .carousel {
     max-width: 100%;
@@ -130,6 +153,9 @@
   }
   body section.our-work .carousel .carousel-control-next {
     right: 0px;
+  }
+  body section.contact ul li span {
+    font-size: 12px;
   }
 }
 
