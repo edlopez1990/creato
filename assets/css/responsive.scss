@@ -1,0 +1,47 @@
+@media only screen and (max-width: 992px) {
+    body {
+        section.home-header {
+            background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 100%, rgba(23, 235, 177, 0.7) 50%), url(../img/bg_header.png);
+            .block-text {
+                .mb-center {
+                    text-align: center;
+                }
+                svg {
+                    width: 100%;
+                    margin: 5% auto;
+                }
+                .description {
+                    text-align: center;
+                    margin: auto;
+                    display: block;
+                }
+                .btn-learn {
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+        }
+        section.who-we-are {
+            .block-text {
+                h1 {
+                    text-align: center;
+                }
+                p {
+                    text-align: center;
+                    margin: auto;
+                }
+            }
+        }
+        section.our-work {
+            .carousel {
+                max-width: 100%;
+                .carousel-control-prev {
+                    left: 0px;
+                }
+                .carousel-control-next {
+                    right: 0px;
+                }
+            }
+        }
+    }
+}
