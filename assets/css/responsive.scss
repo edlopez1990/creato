@@ -1,6 +1,18 @@
 @media only screen and (max-width: 992px) {
     @import "./menu.scss";
     body {
+        header {
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .nav-logo {
+                img {
+                    width: 50%;
+                    margin-left: 5%;
+                }
+            }
+        }
         section.home-header,
         section.who-we-are,
         section.what-we-do,

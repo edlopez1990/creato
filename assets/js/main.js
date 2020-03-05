@@ -3,6 +3,25 @@ $(document).ready(function() {
     /*$('#nav-icon').click(function() {
          $(this).toggleClass('open');
      });*/
+
+    $('.slide-header').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        adaptiveHeight: true,
+        dotsClass: "vertical-dots-left"
+    });
+
+
+    $('.slide-our-work').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        adaptiveHeight: true,
+        dotsClass: "vertical-dots-right"
+    });
 });
 
 $(window).resize(function() {

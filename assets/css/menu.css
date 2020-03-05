@@ -41,9 +41,13 @@
   margin-top: 30px;
 }
 
+.overlay .overlay-content .logo-mobil {
+  width: 50%;
+  margin: 5% 0px;
+}
+
 .mobil {
   position: absolute;
-  top: -15%;
   right: 5%;
 }
 
@@ -57,7 +61,7 @@
   width: 60px;
   height: 45px;
   position: relative;
-  margin: 50px auto;
+  margin: auto;
   -webkit-transform: rotate(0deg);
   transform: rotate(0deg);
   -webkit-transition: .5s ease-in-out;

@@ -33,12 +33,16 @@ $color:#000;
         width: 100%;
         text-align: center;
         margin-top: 30px;
+        .logo-mobil {
+            width: 50%;
+            margin: 5% 0px;
+        }
     }
 }
 
 .mobil {
     position: absolute;
-    top: -15%;
+    // top: -15%;
     right: 5%;
 }
 
@@ -54,7 +58,7 @@ $color:#000;
     width: 60px;
     height: 45px;
     position: relative;
-    margin: 50px auto;
+    margin: auto;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
