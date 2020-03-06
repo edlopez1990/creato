@@ -1,3 +1,13 @@
+@media only screen and (max-width: 768px) {
+    body {
+        .our-work {
+            .vertical-dots-right {
+                display: none !important;
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 992px) {
     @import "./menu.scss";
     body {
@@ -28,7 +38,7 @@
             }
         }
         section.home-header {
-            background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 100%, rgba(23, 235, 177, 0.7) 50%), url(../img/bg_header.png);
+            background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 100%, rgba(0, 38, 202, 0.7) 50%), url(../img/bg_header.png);
             height: 100vh;
             min-height: 600px;
             .block-text {
