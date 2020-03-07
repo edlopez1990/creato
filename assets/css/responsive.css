@@ -1,3 +1,4 @@
+/*CSS Responsivo*/
 @media only screen and (max-width: 768px) {
   body .our-work .vertical-dots-right {
     display: none !important;

@@ -32,7 +32,14 @@ $(document).ready(function() {
                 }
             },
             {
-                breakpoint: 600,
+                breakpoint: 962,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 768,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2
@@ -51,6 +58,14 @@ $(document).ready(function() {
         ],
         dotsClass: "vertical-dots-right"
     });
+
+    var animation = bodymovin.loadAnimation({
+        container: document.getElementById('bm'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: 'data.json'
+    })
 });
 
 $(window).resize(function() {

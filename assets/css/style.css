@@ -3554,7 +3554,8 @@ body {
 .js .cd-h-timeline__container {
     position: relative;
     height: 300px;
-    max-width: 800px
+    /*max-width: 800px*/
+    ;
 }
 
 .js .cd-h-timeline__dates {
@@ -3570,10 +3571,17 @@ body {
     position: absolute;
     bottom: -40px;
     right: 33%;
+    color: #fff;
+    font-weight: bold;
 }
 
 .js .cd-h-timeline__dates img {
     max-width: 100px;
+    margin-bottom: 100%;
+}
+
+.js .cd-h-timeline__dates #bm {
+    width: 114px;
     margin-bottom: 100%;
 }
 
@@ -3620,8 +3628,7 @@ body {
     top: 0;
     height: 100%;
     width: 100%;
-    background-color: hsl(74, 93%, 32%);
-    background-color: var(--cd-color-2);
+    background-color: #0F47F2;
     -webkit-transform: scaleX(0);
     -ms-transform: scaleX(0);
     transform: scaleX(0);
@@ -3657,25 +3664,17 @@ body {
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
-    bottom: -5px;
-    height: 12px;
-    width: 12px;
-    border-radius: 50%;
-    border-width: 2px;
-    border-style: solid;
-    border-color: hsl(0, 0%, 87.3%);
-    border-color: hsl(var(--cd-color-3-h), var(--cd-color-3-s), calc(var(--cd-color-3-l)*0.9));
-    background-color: hsl(0, 0%, 97%);
-    background-color: var(--cd-color-3);
-    transition: background-color 0.3s, border-color .3s
+    bottom: -10px;
+    height: 20px;
+    width: 20px;
+    background-image: url('../img/dot-active-white.png');
+    /*background-color: hsl(0, 0%, 97%);
+    background-color: var(--cd-color-3);*/
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
-.js .cd-h-timeline__date:hover::after {
-    background-color: hsl(74, 93%, 32%);
-    background-color: var(--cd-color-2);
-    border-color: hsl(74, 93%, 32%);
-    border-color: var(--cd-color-2)
-}
+.js .cd-h-timeline__date:hover::after {}
 
 @media (min-width: 64rem) {
     .js .cd-h-timeline__date {
@@ -3684,14 +3683,20 @@ body {
 }
 
 .js .cd-h-timeline__date--selected {
-    pointer-events: none
+    pointer-events: none;
+}
+
+.js .cd-h-timeline__date--selected img {
+    zoom: 1.15;
 }
 
 .js .cd-h-timeline__date--selected::after {
-    background-color: hsl(74, 93%, 32%);
-    background-color: var(--cd-color-2);
-    border-color: hsl(74, 93%, 32%);
-    border-color: var(--cd-color-2)
+    background-image: url(../img/time-line-selected.png);
+    background-position: center;
+    background-size: contain;
+    height: 25px;
+    width: 25px;
+    background-repeat: no-repeat;
 }
 
 .js .cd-h-timeline__date--older-event::after {
@@ -3706,14 +3711,8 @@ body {
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    height: 34px;
+    height: 100%;
     width: 34px;
-    border-radius: 50%;
-    border-width: 2px;
-    border-style: solid;
-    border-color: hsl(0, 0%, 87.3%);
-    border-color: hsl(var(--cd-color-3-h), var(--cd-color-3-s), calc(var(--cd-color-3-l)*0.9));
-    transition: border-color 0.3s
 }
 
 .js .cd-h-timeline__navigation::after {
@@ -3730,8 +3729,7 @@ body {
 }
 
 .js .cd-h-timeline__navigation:hover {
-    border-color: hsl(74, 93%, 32%);
-    border-color: var(--cd-color-2)
+    border-color: transparent;
 }
 
 .js .cd-h-timeline__navigation--prev {

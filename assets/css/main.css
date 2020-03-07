@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/*CSS Principal*/
 html,
 body,
 div,
@@ -583,8 +584,8 @@ body .slide-header .vertical-dots-left {
 
 body .slide-header .vertical-dots-left li {
   position: relative;
-  width: 10px;
-  height: 10px;
+  width: 20px;
+  height: 20px;
   cursor: pointer;
   background: #fff;
   margin: 17px auto;
@@ -595,8 +596,8 @@ body .slide-header .vertical-dots-left li button {
   font-size: 0;
   line-height: 0;
   display: block;
-  width: 10px;
-  height: 10px;
+  width: 20px;
+  height: 20px;
   padding: 5px;
   cursor: pointer;
   color: transparent;
@@ -702,8 +703,8 @@ body .slide-our-work .vertical-dots-right {
 
 body .slide-our-work .vertical-dots-right li {
   position: relative;
-  width: 10px;
-  height: 10px;
+  width: 20px;
+  height: 20px;
   cursor: pointer;
   background: #000;
   margin: 17px auto;
@@ -714,8 +715,8 @@ body .slide-our-work .vertical-dots-right li button {
   font-size: 0;
   line-height: 0;
   display: block;
-  width: 10px;
-  height: 10px;
+  width: 20px;
+  height: 20px;
   padding: 5px;
   cursor: pointer;
   color: transparent;
