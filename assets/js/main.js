@@ -1,9 +1,6 @@
 $(document).ready(function() {
-    set_height();
-    /*$('#nav-icon').click(function() {
-         $(this).toggleClass('open');
-     });*/
 
+    //slider header 
     $('.slide-header').slick({
         dots: true,
         infinite: true,
@@ -58,7 +55,7 @@ $(document).ready(function() {
         ],
         dotsClass: "vertical-dots-right"
     });
-
+    //Loties animation
     var animation = bodymovin.loadAnimation({
         container: document.getElementById('bm'),
         renderer: 'svg',
@@ -66,17 +63,38 @@ $(document).ready(function() {
         autoplay: true,
         path: 'data.json'
     })
+
+    var animation = bodymovin.loadAnimation({
+        container: document.getElementById('bm-mobil'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: 'data.json'
+    })
+
+
+    //script para button top-up
+    var btn = $('#top-up');
+
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > 300) {
+            btn.addClass('show');
+        } else {
+            btn.removeClass('show');
+        }
+    });
+
+    btn.on('click', function(e) {
+        e.preventDefault();
+        $('html, body').animate({ scrollTop: 0 }, '300');
+    });
 });
 
 $(window).resize(function() {
-    //aqui el codigo que se ejecutara cuando se redimencione la ventana
-    set_height();
+
 })
 
-function set_height() {
-    //height = $(window).height();
-    //$(".block").height(height);
-}
+
 
 function openNav() {
     document.getElementById("nav").style.width = "100%";

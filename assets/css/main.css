@@ -103,10 +103,40 @@ video {
   position: relative;
 }
 
+.item-timeline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin: 25px 25px;
+}
+
+.item-timeline a,
+.item-timeline a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
 .dark-bg {
   background: #000;
 }
 
+/*classes del boton top-up*/
+#top-up {
+  display: none;
+}
+
+.show {
+  display: block !important;
+}
+
+/*fin*/
 body {
   /*dots left slider */
   /* dots right slider */
